@@ -17,4 +17,6 @@ def Calculate(request) :
         Result = input1 * input2
     elif 'divide' in request.POST:
         Result = input1 / input2
+    else :
+        Result = 'Please Enter the number!'
     return render(request, 'home.html',{'Result':Result})

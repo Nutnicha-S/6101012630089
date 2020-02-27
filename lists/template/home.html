@@ -4,17 +4,17 @@
         <form action='calculate' method='POST'> 
             {% csrf_token %}
         <p>X : 
-            <input type="text" placeholder="Enter the number" name="X" />
+            <input type="text" placeholder="Enter the number" id="num1" name="X" />
         </p>
         <p>Y :
-            <input type="text" placeholder="Enter the number" name="Y" />
+            <input type="text" placeholder="Enter the number" id="num2" name="Y" />
         </p>
             Result : {{Result}}
         <p>
-        <button type="submit" name="add">+</button>
-        <button type="submit" name="minus">-</button>
-        <button type="submit" name="multiple">x</button>
-        <button type="submit" name="divide">/</button>
+        <button type="submit" id="plus" name="add">+</button>
+        <button type="submit" id="sub" name="minus">-</button>
+        <button type="submit" id="mul" name="multiple">x</button>
+        <button type="submit" id="div" name="divide">/</button>
         </p>
         </form>
     </body>
