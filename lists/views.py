@@ -29,4 +29,7 @@ def Calculate(request) :
         Result = input1 / input2
     else :
         Result = 'Please Enter the number!'
+
+    if 'continue' in request.POST:
+        input1 = float(Result)
     return render(request, 'home.html',{'Result':Result})
