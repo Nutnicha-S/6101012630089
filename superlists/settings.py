@@ -16,11 +16,13 @@ SETTINGS_DIR = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'template')
+TEMPLATE_GET_PATH = os.path.join(PROJECT_PATH, 'templateGET')
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     TEMPLATE_PATH,
+    TEMPLATE_GET_PATH,
 )
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -48,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'CalculatorGET',
     'lists',
     'superlists',
 ]
@@ -68,7 +71,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'lists/template')
+            os.path.join(BASE_DIR, 'lists/template'),
+            os.path.join(BASE_DIR, 'CalculatorGET/templateGET')
         ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -1,9 +1,19 @@
 from django.shortcuts import render
+from CalculatorGET import viewsGET
 
 # Create your views here.
 
+def Home_page(request):
+    return render(request, 'homepage.html')
+
+def HomeGET(request):
+    return render(request, 'homeGET.html')
+
 def Home(request):
     return render(request, 'home.html')
+
+def About(request):
+    return render(request, 'About.html')
 
 def Calculate(request) :
     Result = 0

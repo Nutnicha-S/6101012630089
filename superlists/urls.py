@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from lists import views
+from CalculatorGET import viewsGET
 
 from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'home', views.Home, name='home'),
+    url('homepage', views.Home_page, name='homepage'),
+    url('home', views.Home, name='home'),
+    url('homeGET', views.HomeGET, name='homeGET'),
+    url('About', views.About, name='about'),
     url('calculate', views.Calculate , name='calculate'),
     #path('admin/', admin.site.urls),
 ]
