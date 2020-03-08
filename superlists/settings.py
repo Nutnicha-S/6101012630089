@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CalculatorGET',
-    'lists',
+    'CalculatorPOST',
     'superlists',
 ]
 
@@ -71,7 +71,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'lists/template'),
+            os.path.join(BASE_DIR, 'CalculatorPOST/template'),
             os.path.join(BASE_DIR, 'CalculatorGET/templateGET')
         ],
         'APP_DIRS': True,

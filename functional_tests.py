@@ -31,6 +31,7 @@ class NewVisitorTest(unittest.TestCase):
         )
         #เธอใส่เลข 9 ลงไป
         inputX_box.send_keys('9')
+        time.sleep(5)
 
         #เธอเห็น textbox Y
         inputY_box = self.browser.find_element_by_id("num2")
@@ -40,6 +41,7 @@ class NewVisitorTest(unittest.TestCase):
         )
         #เธอใส่เลข 8 ลงไป
         inputY_box.send_keys('8')
+        time.sleep(5)
 
         #เธอเห็นปุ่ม +
         plus_button = self.browser.find_element_by_id("plus")
